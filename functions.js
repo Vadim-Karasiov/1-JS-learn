@@ -68,12 +68,13 @@
 
 
 //----------------------------- Recursion
-var saySomething = function abc() {
-    var a = 5;
+var a = 5;
+function abc() {
     a++;
-    console.log('Hello John');
-    if(a === 10) return;
+    console.log(a);
+    debugger;
+    if(a > 10) return;
     abc();
 }
 
-saySomething();
+abc();
