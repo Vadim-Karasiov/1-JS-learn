@@ -249,4 +249,21 @@ var sumOfBills = bills.reduce(function(result, shop){
 
     return result;
 }, initialValue);
-console.log('[sumOfBills]', sumOfBills);
+// console.log('[sumOfBills]', sumOfBills);
+
+function sayHello(firstName, myAge, lastName) {
+    
+    var name = arguments[0];
+    var age = arguments[1];
+    var surname = arguments[2];
+
+    console.log('[name]', name);
+    console.log('[age]', age);
+    console.log('[surname]', surname);
+
+    // var myAge = age || 100;
+    // console.log('Hello, my name is ' + name + ' and my age is ' + (age || 100));
+}
+
+sayHello('John' , '53');
+sayHello('John', 0, 'Smith');
